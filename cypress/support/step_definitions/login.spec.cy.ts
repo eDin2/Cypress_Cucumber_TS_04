@@ -1,11 +1,6 @@
 /// <reference types="cypress" />
 
-import {
-  Given,
-  When,
-  Then,
-  DataTable,
-} from "@badeball/cypress-cucumber-preprocessor";
+import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 Given(`Seite laden`, () => {
   cy.visit("/");
