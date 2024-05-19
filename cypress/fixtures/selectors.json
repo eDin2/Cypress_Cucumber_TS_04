@@ -1,5 +1,5 @@
 {
-  "USER": {
+  "USERS": {
     "userName": "standard_user",
     "passWord": "secret_sauce"
   },
@@ -12,4 +12,6 @@
   "BUTTONS": {
     "loginBtn": "[data-test='login-button']"
   }
+
+  ""
 }
