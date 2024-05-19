@@ -1,7 +1,15 @@
 {
-  "inputUserNameField": "[data-test='username']",
-  "inputPasswordField": "[data-test='password']",
-  "loginBtn": "[data-test='login-button']",
-  "userName": "standard_user",
-  "passWord": "secret_sauce"
+  "USER": {
+    "userName": "standard_user",
+    "passWord": "secret_sauce"
+  },
+
+  "INPUT_FILED": {
+    "inputUserNameField": "[data-test='username']",
+    "inputPasswordField": "[data-test='password']"
+  },
+
+  "BUTTONS": {
+    "loginBtn": "[data-test='login-button']"
+  }
 }

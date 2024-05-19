@@ -8,18 +8,18 @@ Given(`Seite laden`, () => {
 
 When(`User Namen eingeben`, () => {
   cy.fixture("selectors").then((sel) => {
-    cy.typeTxt_02(sel.inputUserNameField, sel.userName);
+    cy.typeTxt_02(sel.INPUT_FILED.inputUserNameField, sel.USER.userName);
   });
 });
 
 When(`Passwort eingeben`, () => {
   cy.fixture("selectors").then((sel) => {
-    cy.typeTxt_02(sel.inputPasswordField, sel.passWord);
+    cy.typeTxt_02(sel.INPUT_FILED.inputPasswordField, sel.USER.passWord);
   });
 });
 
 Then(`Klick auf Login`, () => {
   cy.fixture("selectors").then((sel) => {
-    cy.clickElement(sel.loginBtn);
+    cy.clickElement(sel.BUTTONS.loginBtn);
   });
 });
