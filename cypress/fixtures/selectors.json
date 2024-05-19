@@ -12,5 +12,4 @@
   "BUTTONS": {
     "loginBtn": "[data-test='login-button']"
   }
-
 }
