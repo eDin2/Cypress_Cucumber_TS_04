@@ -1,0 +1,19 @@
+{
+  "name": "cypress_cucumber_ts_02",
+  "version": "1.0.0",
+  "description": "cypress-with-cucumber-and-ts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elvedin",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.9.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.3",
+    "@cypress/browserify-preprocessor": "^3.0.2"
+  }
+}
