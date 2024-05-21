@@ -28,14 +28,7 @@ Then(`Klick auf Login`, () => {
 
 // Die geschwungenen Klammern ist der Inhalt der Anführungszeichen im .feature file
 When(
-  `Username Inputfield: {string} with Username: {string} eingeben`,
-  (field: string, text: string) => {
-    cy.inputTxtInField(field, text);
-  }
-);
-
-When(
-  `Passwort Inputfield: {string} with Passwort: {string} eingeben`,
+  `Inputfield: {string} type text: {string} eingeben`,
   (field: string, text: string) => {
     cy.inputTxtInField(field, text);
   }
