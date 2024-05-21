@@ -14,5 +14,9 @@
 
   "BUTTONS": {
     "loginBtn": "[data-test='login-button']"
+  },
+
+  "PRODUCT": {
+    "backpack": "[data-test='add-to-cart-sauce-labs-backpack']"
   }
 }
