@@ -5,10 +5,10 @@ Feature: My login
         Given Seite laden
 
     Scenario: User Namen Input
-        When Username Inputfield: "Username Field" with Username: "standard_user" eingeben
+        When Inputfield: "Username Field" type text: "standard_user" eingeben
 
     Scenario: Passwort Input
-        When Passwort Inputfield: "Password Field" with Passwort: "secret_sauce" eingeben
+        When Inputfield: "Password Field" type text: "secret_sauce" eingeben
 
     Scenario: Klick on Login
         Then Klick on button: "Login"
