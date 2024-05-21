@@ -28,9 +28,8 @@ import "./commands";
 declare global {
   namespace Cypress {
     interface Chainable {
-      clickElement(element: string): void;
-      typeTxt(text: string): void;
-      typeTxt_02(field: any, text: string): void;
+      clickOnElement(element: string): void;
+      inputTxtInField(field: String, text: string): void;
     }
   }
 }

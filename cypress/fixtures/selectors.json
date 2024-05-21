@@ -1,10 +1,13 @@
 {
   "USERS": {
-    "userName": "standard_user",
+    "userName": "standard_user"
+  },
+
+  "PASSWORD": {
     "passWord": "secret_sauce"
   },
 
-  "INPUT_FILED": {
+  "INPUT_FIELD": {
     "inputUserNameField": "[data-test='username']",
     "inputPasswordField": "[data-test='password']"
   },

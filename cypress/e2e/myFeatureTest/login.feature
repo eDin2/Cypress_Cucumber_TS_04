@@ -4,11 +4,11 @@ Feature: My login
     Scenario: Seite laden
         Given Seite laden
 
-    Scenario: Scenario name User Namen eingeben
-        When User Namen eingeben
+    Scenario: User Namen Input
+        When Username Inputfield: "Username Field" with Username: "standard_user" eingeben
 
-    Scenario: Passwort eingeben
-        When Passwort eingeben
+    Scenario: Passwort Input
+        When Passwort Inputfield: "Password Field" with Passwort: "secret_sauce" eingeben
 
-    Scenario: Klick auf Login
-        Then Klick auf Login
+    Scenario: Klick on Login
+        Then Klick on button: "Login"

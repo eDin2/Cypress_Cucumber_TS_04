@@ -1,7 +1,6 @@
 /// <reference types="cypress" />
 
-import cypress = require("cypress");
-
+/* 
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -38,18 +37,35 @@ import cypress = require("cypress");
 //     }
 //   }
 // }
+*/
 
-// KLick auf Button
-Cypress.Commands.add("clickElement", (element) => {
-  cy.get(element).should("exist").click();
+import cypress = require("cypress");
+import selectors from "../fixtures/selectors.json";
+import { userInterfaceSelectors } from "../fixtures/interface.action.cy";
+
+//--------------------------------------------------------------
+//##############################################################
+// Eingabe aus den geschweiften klammern
+Cypress.Commands.add("inputTxtInField", (field: string, text: string) => {
+  if (!(text in userInterfaceSelectors)) {
+    throw new Error(
+      `Unsported Field, please update the Switch statment ${text}`
+    );
+  }
+
+  const fieldSelector = userInterfaceSelectors[field];
+  cy.get(fieldSelector).should("exist").type(text);
 });
 
-//Nur eingabe
-Cypress.Commands.add("typeTxt", (text) => {
-  cy.get(text).should("exist").type(text);
-});
+//--------------------------------------------------------------
+//##############################################################
+Cypress.Commands.add("clickOnElement", (btnElement: string) => {
+  if (!(btnElement in userInterfaceSelectors)) {
+    throw new Error(
+      `Unsported Btn, please update the Switch statment ${btnElement}`
+    );
+  }
 
-// Eingabe in ein speziefisches Eingabefeld
-Cypress.Commands.add("typeTxt_02", (field, text) => {
-  cy.get(field).should("exist").type(text);
+  const btnSelector = userInterfaceSelectors[btnElement];
+  cy.get(btnSelector).should("exist").click();
 });
