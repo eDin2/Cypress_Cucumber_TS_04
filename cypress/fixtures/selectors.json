@@ -1,22 +1,27 @@
 {
   "USERS": {
+    "_comment": "Dieser Text ist ein Kommentar",
     "userName": "standard_user"
   },
 
   "PASSWORD": {
+    "_comment": "Dieser Text ist ein Kommentar",
     "passWord": "secret_sauce"
   },
 
   "INPUT_FIELD": {
+    "_comment": "Dieser Text ist ein Kommentar",
     "inputUserNameField": "[data-test='username']",
     "inputPasswordField": "[data-test='password']"
   },
 
   "BUTTONS": {
+    "_comment": "Dieser Text ist ein Kommentar",
     "loginBtn": "[data-test='login-button']"
   },
 
   "PRODUCT": {
+    "_comment": "Dieser Text ist ein Kommentar",
     "backpack": "[data-test='add-to-cart-sauce-labs-backpack']"
   }
 }
