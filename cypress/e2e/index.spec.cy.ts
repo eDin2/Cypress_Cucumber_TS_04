@@ -7,19 +7,19 @@ describe("template spec", () => {
 
   it("Input User Name", () => {
     cy.fixture("selectors").then((sel) => {
-      cy.typeTxt_02(sel.inputUserNameField, sel.userName);
+      cy.inputTxtInField(sel.inputUserNameField, sel.userName);
     });
   });
 
   it("Input Password", () => {
     cy.fixture("selectors").then((sel) => {
-      cy.typeTxt_02(sel.inputPasswordField, sel.passWord);
+      cy.inputTxtInField(sel.inputPasswordField, sel.passWord);
     });
   });
 
   it("Click On Login", () => {
     cy.fixture("selectors").then((sel) => {
-      cy.clickElement(sel.loginBtn);
+      cy.clickOnElement(sel.loginBtn);
     });
   });
 });
